@@ -41,6 +41,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.contraint_layout->{
                 startActivity(Intent(this,ConstraintActivity::class.java))
             }
+            R.id.nestedscrollview->{
+                startActivity(Intent(this,NestedScrollView::class.java))
+            }
         }
         drawer.closeDrawer(GravityCompat.START)
         return true
