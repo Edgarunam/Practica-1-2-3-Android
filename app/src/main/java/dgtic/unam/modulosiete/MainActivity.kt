@@ -44,6 +44,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.nestedscrollview->{
                 startActivity(Intent(this,NestedScrollView::class.java))
             }
+            R.id.collapsing->{
+                startActivity(Intent(this,CollapsingToolbarLayout::class.java))
+            }
         }
         drawer.closeDrawer(GravityCompat.START)
         return true
